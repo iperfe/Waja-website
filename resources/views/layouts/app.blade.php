@@ -328,6 +328,11 @@
               </div>
             </div>
           </div>
+
+          <a href="{{ route('products') }}" class="relative py-2 px-3 text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 group">
+            Products
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
+          </a>
           
           <a href="{{ route('contact') }}" class="relative py-2 px-3 text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 group">
             Contact
