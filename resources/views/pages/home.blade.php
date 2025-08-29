@@ -8,7 +8,7 @@
       <!-- Slide 1 - Insurance Protection -->
       <div class="swiper-slide relative">
         <div class="absolute inset-0 bg-black/50 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/hero-insurance.jpg') }}')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('assets/hero-waja-1.png') }}')"></div>
         <div class="relative z-20 h-full flex items-center justify-center">
           <div class="max-w-5xl mx-auto px-4 text-center text-white">
             <div class="animate-fade-in-up">
@@ -35,7 +35,7 @@
       <!-- Slide 2 - Mining Industry -->
       <div class="swiper-slide relative">
         <div class="absolute inset-0 bg-black/50 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/hero-mining.jpg') }}')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('assets/hero-waja-2.png') }}')"></div>
         <div class="relative z-20 h-full flex items-center justify-center">
           <div class="max-w-5xl mx-auto px-4 text-center text-white">
             <div class="animate-fade-in-up">
@@ -62,7 +62,7 @@
       <!-- Slide 3 - Manufacturing -->
       <div class="swiper-slide relative">
         <div class="absolute inset-0 bg-black/50 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/hero-manufacturing.jpg') }}')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('assets/hero-waja-3.png') }}')"></div>
         <div class="relative z-20 h-full flex items-center justify-center">
           <div class="max-w-5xl mx-auto px-4 text-center text-white">
             <div class="animate-fade-in-up">
@@ -86,59 +86,6 @@
         </div>
       </div>
 
-      <!-- Slide 4 - Transportation -->
-      <div class="swiper-slide relative">
-        <div class="absolute inset-0 bg-black/50 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/hero-transport.jpg') }}')"></div>
-        <div class="relative z-20 h-full flex items-center justify-center">
-          <div class="max-w-5xl mx-auto px-4 text-center text-white">
-            <div class="animate-fade-in-up">
-              <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Trusted by 
-                <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">500+ Companies</span>
-              </h1>
-              <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
-                Join hundreds of satisfied clients who trust us with their transportation and logistics insurance needs.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('about') }}" class="px-8 py-4 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  About Us
-                </a>
-                <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                  Join Today
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 5 - Team Excellence -->
-      <div class="swiper-slide relative">
-        <div class="absolute inset-0 bg-black/50 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/hero-team.jpg') }}')"></div>
-        <div class="relative z-20 h-full flex items-center justify-center">
-          <div class="max-w-5xl mx-auto px-4 text-center text-white">
-            <div class="animate-fade-in-up">
-              <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Excellence in 
-                <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Insurance Services</span>
-              </h1>
-              <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
-                Our expert team delivers personalized insurance solutions with 15+ years of industry experience and unmatched customer service.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('about') }}" class="px-8 py-4 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  Meet Our Team
-                </a>
-                <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                  Start Today
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     
     <!-- Navigation buttons -->
