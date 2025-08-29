@@ -1,80 +1,113 @@
 @extends('layouts.app')
 @section('content')
-<!-- Hero Slider Section -->
+<!-- Hero Slider Section with Images -->
 <section class="relative h-screen overflow-hidden">
   <!-- Swiper -->
   <div class="swiper heroSwiper h-full">
     <div class="swiper-wrapper">
-      <!-- Slide 1 -->
+      <!-- Slide 1 - Insurance Protection -->
       <div class="swiper-slide relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-indigo-800/90 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
         <div class="relative z-20 h-full flex items-center justify-center">
-          <div class="max-w-4xl mx-auto px-4 text-center text-white">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up">
-              Safeguarding your future with 
-              <span class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">tailored insurance</span>
-            </h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8 animate-fade-in-up animation-delay-300">
-              We provide comprehensive and affordable insurance coverage, building long-term relationships based on trust and transparency.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
-              <a href="{{ route('products') }}" class="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                Our Services
-              </a>
-              <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                Get Free Quote
-              </a>
+          <div class="max-w-5xl mx-auto px-4 text-center text-white">
+            <div class="animate-fade-in-up">
+              <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                Safeguarding your future with 
+                <span class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">tailored insurance</span>
+              </h1>
+              <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
+                We provide comprehensive and affordable insurance coverage, building long-term relationships based on trust and transparency.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{{ route('products') }}" class="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  Our Services
+                </a>
+                <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
+                  Get Free Quote
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Slide 2 -->
+      <!-- Slide 2 - Mining Industry -->
       <div class="swiper-slide relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-green-900/90 to-teal-800/90 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"></div>
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
         <div class="relative z-20 h-full flex items-center justify-center">
-          <div class="max-w-4xl mx-auto px-4 text-center text-white">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              Specialized Insurance for 
-              <span class="bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">Mining & Transport</span>
-            </h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
-              Expert coverage for high-risk industries with customized solutions for mining operations and transport logistics.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="{{ route('products') }}" class="px-8 py-4 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                View Industries
-              </a>
-              <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                Contact Expert
-              </a>
+          <div class="max-w-5xl mx-auto px-4 text-center text-white">
+            <div class="animate-fade-in-up">
+              <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                Specialized Insurance for 
+                <span class="bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">Mining & Transport</span>
+              </h1>
+              <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
+                Expert coverage for high-risk industries with customized solutions for mining operations and transport logistics.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{{ route('products') }}" class="px-8 py-4 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  View Industries
+                </a>
+                <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
+                  Contact Expert
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Slide 3 -->
+      <!-- Slide 3 - Manufacturing -->
       <div class="swiper-slide relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-pink-800/90 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"></div>
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
         <div class="relative z-20 h-full flex items-center justify-center">
-          <div class="max-w-4xl mx-auto px-4 text-center text-white">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              Trusted by 
-              <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">500+ Companies</span>
-            </h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
-              Join hundreds of satisfied clients who trust us with their insurance needs. Experience exceptional service and comprehensive coverage.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="{{ route('about') }}" class="px-8 py-4 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                About Us
-              </a>
-              <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                Join Today
-              </a>
+          <div class="max-w-5xl mx-auto px-4 text-center text-white">
+            <div class="animate-fade-in-up">
+              <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                Comprehensive Coverage for 
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Manufacturing</span>
+              </h1>
+              <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
+                Protecting your production lines, equipment, and supply chain with specialized manufacturing insurance solutions.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{{ route('products') }}" class="px-8 py-4 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  Manufacturing Coverage
+                </a>
+                <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
+                  Get Assessment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 - Transportation -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="relative z-20 h-full flex items-center justify-center">
+          <div class="max-w-5xl mx-auto px-4 text-center text-white">
+            <div class="animate-fade-in-up">
+              <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                Trusted by 
+                <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">500+ Companies</span>
+              </h1>
+              <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
+                Join hundreds of satisfied clients who trust us with their transportation and logistics insurance needs.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{{ route('about') }}" class="px-8 py-4 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  About Us
+                </a>
+                <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
+                  Join Today
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -82,8 +115,8 @@
     </div>
     
     <!-- Navigation buttons -->
-    <div class="swiper-button-next text-white after:text-2xl"></div>
-    <div class="swiper-button-prev text-white after:text-2xl"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
     
     <!-- Pagination -->
     <div class="swiper-pagination"></div>
@@ -298,17 +331,7 @@
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
-}
-
-.animation-delay-300 {
-  animation-delay: 0.3s;
-  opacity: 0;
-}
-
-.animation-delay-600 {
-  animation-delay: 0.6s;
-  opacity: 0;
+  animation: fade-in-up 0.8s ease-out forwards;
 }
 
 /* Swiper customizations */
@@ -317,17 +340,18 @@
   height: 12px;
   background: rgba(255, 255, 255, 0.5);
   opacity: 1;
+  margin: 0 6px;
 }
 
 .heroSwiper .swiper-pagination-bullet-active {
   background: white;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .heroSwiper .swiper-button-next,
 .heroSwiper .swiper-button-prev {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   backdrop-filter: blur(10px);
@@ -343,8 +367,13 @@
 
 .heroSwiper .swiper-button-next::after,
 .heroSwiper .swiper-button-prev::after {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
+  color: white;
+}
+
+.heroSwiper .swiper-pagination {
+  bottom: 30px;
 }
 </style>
 
@@ -354,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const heroSwiper = new Swiper('.heroSwiper', {
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     effect: 'fade',
@@ -369,19 +398,16 @@ document.addEventListener('DOMContentLoaded', function() {
       el: '.swiper-pagination',
       clickable: true,
     },
-    speed: 1000,
+    speed: 1200,
     on: {
       slideChange: function() {
         // Reset animations on slide change
         const activeSlide = this.slides[this.activeIndex];
         const animatedElements = activeSlide.querySelectorAll('.animate-fade-in-up');
-        animatedElements.forEach((el, index) => {
+        animatedElements.forEach((el) => {
           el.style.animation = 'none';
           setTimeout(() => {
-            el.style.animation = `fade-in-up 0.6s ease-out forwards`;
-            if (index > 0) {
-              el.style.animationDelay = `${index * 0.3}s`;
-            }
+            el.style.animation = 'fade-in-up 0.8s ease-out forwards';
           }, 100);
         });
       }
