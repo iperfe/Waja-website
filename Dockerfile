@@ -1,48 +1,26 @@
-# Use official PHP image with Apache
+# Use official PHP Apache image
 FROM php:8.2-apache
 
-# Install system dependencies
+# Install dependencies (PostgreSQL, GD, etc.)
 RUN apt-get update && apt-get install -y \
+    libpq-dev \
     unzip \
     git \
-    curl \
-    libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    zip \
-    nodejs \
-    npm \
-    libpq-dev \
-    && docker-php-ext-install pdo pdo_pgsql mbstring exif pcntl bcmath gd
+    && docker-php-ext-install pdo pdo_pgsql pgsql \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Enable Apache mod_rewrite
+# Enable Apache rewrite module
 RUN a2enmod rewrite
 
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy composer from composer official image
-COPY --from=composer:2.6 /usr/bin/composer /usr/bin/composer
-
 # Copy project files
-COPY . .
+COPY . /var/www/html
 
-# Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
-
-# Install Node dependencies & build assets
-RUN npm install && npm run build
-
-# Set correct permissions for Laravel storage and bootstrap cache
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
-
-# Make Apache serve the public folder
-RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' /etc/apache2/sites-available/000-default.conf
-
-# Cache Laravel config, routes, views
-RUN php artisan config:cache && \
-    php artisan route:cache && \
-    php artisan view:cache
+# Set correct permissions
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 /var/www/html
 
 # Expose port 80
 EXPOSE 80

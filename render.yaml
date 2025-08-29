@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: waja-website
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: waja-database
+          property: connectionString
+
+databases:
+  - name: waja-database
+    plan: free
