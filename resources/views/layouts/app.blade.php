@@ -67,7 +67,7 @@
   </div>
 
   <!-- Main Header -->
-  <header class="bg-white shadow-lg sticky top-0 z-50 transition-all duration-300" x-data="{ mobileMenuOpen: false, scrolled: false }" @scroll.window="scrolled = window.pageYOffset > 0">
+  <header class="bg-white shadow-lg sticky top-0 z-50 transition-all duration-300" x-data="{ mobileMenuOpen: false, megaMenuOpen: false, scrolled: false }" @scroll.window="scrolled = window.pageYOffset > 0">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
@@ -92,32 +92,234 @@
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
           </a>
           
-          <!-- Services Dropdown -->
-          <div x-data="{ open: false }" class="relative">
-            <button @click="open = !open" @click.away="open = false" class="relative py-2 px-3 text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 group flex items-center gap-1">
+          <!-- Mega Menu Dropdown -->
+          <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <button class="relative py-2 px-3 text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300 group flex items-center gap-1">
               Our Services
               <svg class="w-4 h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
               <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
             </button>
-            <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-95" class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 py-2">
-              <a href="{{ route('products') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
-                <div class="font-medium">All Verticals</div>
-                <div class="text-xs text-gray-500">View all our services</div>
-              </a>
-              <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
-                <div class="font-medium">Mining Insurance</div>
-                <div class="text-xs text-gray-500">Specialized mining coverage</div>
-              </a>
-              <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
-                <div class="font-medium">Transport & Logistics</div>
-                <div class="text-xs text-gray-500">Fleet and cargo protection</div>
-              </a>
-              <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">
-                <div class="font-medium">Manufacturing</div>
-                <div class="text-xs text-gray-500">Production coverage</div>
-              </a>
+            
+            <!-- Mega Menu Panel -->
+            <div x-show="open" 
+                 x-transition:enter="transition ease-out duration-300" 
+                 x-transition:enter-start="opacity-0 transform -translate-y-2" 
+                 x-transition:enter-end="opacity-100 transform translate-y-0" 
+                 x-transition:leave="transition ease-in duration-200" 
+                 x-transition:leave-start="opacity-100 transform translate-y-0" 
+                 x-transition:leave-end="opacity-0 transform -translate-y-2" 
+                 class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-screen max-w-6xl z-50">
+              
+              <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                <!-- Header -->
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-6">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h3 class="text-2xl font-bold text-white">Our Insurance Services</h3>
+                      <p class="text-blue-100 mt-1">Comprehensive coverage for every industry</p>
+                    </div>
+                    <div class="hidden md:block">
+                      <div class="text-right text-white">
+                        <div class="text-3xl font-bold">500+</div>
+                        <div class="text-sm text-blue-100">Happy Clients</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="p-8">
+                  <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+                    <!-- Industrial Services -->
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
+                          <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                          </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Industrial Coverage</h4>
+                      </div>
+                      
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-yellow-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-yellow-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-yellow-700">Mining Insurance</div>
+                            <div class="text-sm text-gray-600">Comprehensive mining operations coverage</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-yellow-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-yellow-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-yellow-700">Chemical Products</div>
+                            <div class="text-sm text-gray-600">Industrial reagents and chemicals</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-yellow-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-yellow-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-yellow-700">Steel & Metal</div>
+                            <div class="text-sm text-gray-600">Steel production and processing</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <!-- Transport & Logistics -->
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                          </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Transport & Logistics</h4>
+                      </div>
+                      
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-green-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-green-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-green-700">Fleet Insurance</div>
+                            <div class="text-sm text-gray-600">Commercial vehicle protection</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-green-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-green-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-green-700">Cargo Insurance</div>
+                            <div class="text-sm text-gray-600">Goods in transit coverage</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-green-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-green-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-green-700">Logistics Coverage</div>
+                            <div class="text-sm text-gray-600">Supply chain protection</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <!-- Manufacturing & Production -->
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                          </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Manufacturing</h4>
+                      </div>
+                      
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-blue-700">Production Coverage</div>
+                            <div class="text-sm text-gray-600">Manufacturing operations protection</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-blue-700">Equipment Insurance</div>
+                            <div class="text-sm text-gray-600">Machinery and equipment coverage</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-blue-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-blue-700">Product Liability</div>
+                            <div class="text-sm text-gray-600">Product safety and liability</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <!-- Commercial & Property -->
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                          <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                          </svg>
+                        </div>
+                        <h4 class="font-bold text-gray-900">Commercial & Property</h4>
+                      </div>
+                      
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-purple-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-purple-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-purple-700">Real Estate</div>
+                            <div class="text-sm text-gray-600">Property and building coverage</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-purple-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-purple-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-purple-700">Hospitality</div>
+                            <div class="text-sm text-gray-600">Hotels and commercial properties</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#" class="block group">
+                        <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-purple-50 transition-colors duration-300">
+                          <div class="w-2 h-2 bg-purple-600 rounded-full mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                          <div>
+                            <div class="font-medium text-gray-900 group-hover:text-purple-700">Business Liability</div>
+                            <div class="text-sm text-gray-600">General liability protection</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer CTA -->
+                <div class="bg-gray-50 px-8 py-6 border-t border-gray-100">
+                  <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Need a Custom Solution?</h4>
+                      <p class="text-sm text-gray-600">Get personalized insurance coverage for your specific industry</p>
+                    </div>
+                    <div class="flex gap-3">
+                      <a href="{{ route('products') }}" class="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-300">
+                        View All Services
+                      </a>
+                      <a href="{{ route('contact') }}" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300">
+                        Get Quote
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -151,7 +353,7 @@
           <a href="{{ route('home') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">Home</a>
           <a href="{{ route('about') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">About Us</a>
           
-          <!-- Mobile Services -->
+          <!-- Mobile Mega Menu -->
           <div x-data="{ open: false }">
             <button @click="open = !open" class="w-full flex justify-between items-center py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">
               Our Services
@@ -159,11 +361,29 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
             </button>
-            <div x-show="open" x-transition class="mt-2 pl-4 space-y-2">
-              <a href="{{ route('products') }}" class="block py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 text-gray-600">All Verticals</a>
-              <a href="#" class="block py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 text-gray-600">Mining Insurance</a>
-              <a href="#" class="block py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 text-gray-600">Transport & Logistics</a>
-              <a href="#" class="block py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 text-gray-600">Manufacturing</a>
+            <div x-show="open" x-transition class="mt-2 pl-4 space-y-4">
+              <!-- Industrial Coverage -->
+              <div class="space-y-2">
+                <div class="font-medium text-gray-700 text-sm">Industrial Coverage</div>
+                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Mining Insurance</a>
+                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Chemical Products</a>
+                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Steel & Metal</a>
+              </div>
+              
+              <!-- Transport & Logistics -->
+              <div class="space-y-2 border-t pt-4">
+                <div class="font-medium text-gray-700 text-sm">Transport & Logistics</div>
+                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Fleet Insurance</a>
+                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Cargo Insurance</a>
+                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Logistics Coverage</a>
+              </div>
+              
+              <!-- View All -->
+              <div class="border-t pt-4">
+                <a href="{{ route('products') }}" class="block py-2 px-4 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-300 text-sm font-medium">
+                  View All Services →
+                </a>
+              </div>
             </div>
           </div>
           
@@ -368,165 +588,4 @@
             </h4>
             <div class="space-y-4 text-gray-300">
               <div class="flex items-start gap-3 group">
-                <svg class="w-5 h-5 mt-0.5 text-blue-400 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-                </svg>
-                <div>
-                  <p class="text-sm font-medium text-white">Office Address</p>
-                  <p class="text-sm">Uhuru Street, Mwanza</p>
-                  <p class="text-sm">Tanzania</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start gap-3 group">
-                <svg class="w-5 h-5 mt-0.5 text-blue-400 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                </svg>
-                <div>
-                  <p class="text-sm font-medium text-white">Phone Numbers</p>
-                  <p class="text-sm">+255 680 277 640</p>
-                  <p class="text-sm">+255 755 666 677</p>
-                  <p class="text-xs text-blue-400 mt-1">Mon-Fri: 8AM-6PM</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start gap-3 group">
-                <svg class="w-5 h-5 mt-0.5 text-blue-400 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                </svg>
-                <div>
-                  <p class="text-sm font-medium text-white">Email Address</p>
-                  <a href="mailto:wajainsurance@wajageneral.co.tz" class="text-sm hover:text-blue-400 transition-colors duration-300">wajainsurance@wajageneral.co.tz</a>
-                  <p class="text-xs text-blue-400 mt-1">24hr response time</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick Stats -->
-            <div class="mt-6 p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-              <h5 class="text-white font-medium mb-3">Why Choose Us?</h5>
-              <div class="grid grid-cols-2 gap-3 text-center">
-                <div>
-                  <div class="text-lg font-bold text-blue-400">500+</div>
-                  <div class="text-xs text-gray-400">Happy Clients</div>
-                </div>
-                <div>
-                  <div class="text-lg font-bold text-green-400">15+</div>
-                  <div class="text-xs text-gray-400">Years Experience</div>
-                </div>
-                <div>
-                  <div class="text-lg font-bold text-yellow-400">24/7</div>
-                  <div class="text-xs text-gray-400">Support</div>
-                </div>
-                <div>
-                  <div class="text-lg font-bold text-purple-400">98%</div>
-                  <div class="text-xs text-gray-400">Satisfaction</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Copyright Section -->
-      <div class="border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 py-6">
-          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="flex flex-col md:flex-row items-center gap-4">
-              <p class="text-sm text-gray-400">© {{ date('Y') }} Waja Insurance Brokers. All rights reserved.</p>
-              <div class="flex items-center gap-2 text-xs text-gray-500">
-                <span>Made with</span>
-                <svg class="w-4 h-4 text-red-400 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                </svg>
-                <span>in Tanzania</span>
-              </div>
-            </div>
-            
-            <div class="flex items-center gap-6">
-              <a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
-              <a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
-              <a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Cookie Policy</a>
-              <a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Sitemap</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll to top button -->
-  <button id="scrollToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform scale-0 z-50 group">
-    <svg class="w-6 h-6 mx-auto group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
-    </svg>
-  </button>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  
-  <script>
-    // Scroll to top functionality
-    window.addEventListener('scroll', function() {
-      const scrollToTop = document.getElementById('scrollToTop');
-      if (window.pageYOffset > 300) {
-        scrollToTop.classList.remove('scale-0');
-        scrollToTop.classList.add('scale-100');
-      } else {
-        scrollToTop.classList.add('scale-0');
-        scrollToTop.classList.remove('scale-100');
-      }
-    });
-
-    document.getElementById('scrollToTop').addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Header scroll effect
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if (window.pageYOffset > 100) {
-        header.classList.add('backdrop-blur-sm', 'bg-white/95');
-      } else {
-        header.classList.remove('backdrop-blur-sm', 'bg-white/95');
-      }
-    });
-  </script>
-
-  <style>
-    .animation-delay-1000 {
-      animation-delay: 1s;
-    }
-    
-    .animation-delay-2000 {
-      animation-delay: 2s;
-    }
-
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #f1f5f9;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, #3b82f6, #1d4ed8);
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: linear-gradient(180deg, #1d4ed8, #1e40af);
-    }
-
-    /* Smooth transitions for all interactive elements */
-    * {
-      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 150ms;
-    }
-  </style>
-</body>
-</html>
+                <svg class="w-5 h-5 mt-0.5 text-blue-400 group-hover
