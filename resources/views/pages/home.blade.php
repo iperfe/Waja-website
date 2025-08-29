@@ -1,46 +1,151 @@
 @extends('layouts.app')
 @section('content')
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900"></div>
-  <div class="absolute inset-0 bg-black/40"></div>
-  
-  <!-- Animated background particles -->
-  <div class="absolute inset-0">
-    <div class="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
-    <div class="absolute top-40 right-20 w-3 h-3 bg-indigo-400 rounded-full animate-pulse"></div>
-    <div class="absolute bottom-32 left-1/4 w-1 h-1 bg-blue-300 rounded-full animate-ping"></div>
-    <div class="absolute bottom-20 right-1/3 w-2 h-2 bg-indigo-300 rounded-full animate-pulse"></div>
-  </div>
-  
-  <div class="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center text-white">
-    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in-up">
-      Safeguarding your future with 
-      <span class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">tailored insurance</span>
-    </h1>
-    <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-gray-200 animate-fade-in-up animation-delay-300">
-      We provide comprehensive and affordable insurance coverage, building long-term relationships based on trust and transparency.
-    </p>
-    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
-      <a href="{{ route('products') }}" class="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-        Our Verticals
-      </a>
-      <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-        Request Quote
-      </a>
+<!-- Hero Slider Section -->
+<section class="relative h-screen overflow-hidden">
+  <!-- Swiper -->
+  <div class="swiper heroSwiper h-full">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-indigo-800/90 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+        <div class="relative z-20 h-full flex items-center justify-center">
+          <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up">
+              Safeguarding your future with 
+              <span class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">tailored insurance</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8 animate-fade-in-up animation-delay-300">
+              We provide comprehensive and affordable insurance coverage, building long-term relationships based on trust and transparency.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
+              <a href="{{ route('products') }}" class="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                Our Services
+              </a>
+              <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
+                Get Free Quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-green-900/90 to-teal-800/90 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"></div>
+        <div class="relative z-20 h-full flex items-center justify-center">
+          <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+              Specialized Insurance for 
+              <span class="bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">Mining & Transport</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
+              Expert coverage for high-risk industries with customized solutions for mining operations and transport logistics.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="{{ route('products') }}" class="px-8 py-4 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                View Industries
+              </a>
+              <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
+                Contact Expert
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-pink-800/90 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"></div>
+        <div class="relative z-20 h-full flex items-center justify-center">
+          <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+              Trusted by 
+              <span class="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">500+ Companies</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
+              Join hundreds of satisfied clients who trust us with their insurance needs. Experience exceptional service and comprehensive coverage.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="{{ route('about') }}" class="px-8 py-4 bg-purple-500 text-white rounded-lg font-semibold hover:bg-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                About Us
+              </a>
+              <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
+                Join Today
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next text-white after:text-2xl"></div>
+    <div class="swiper-button-prev text-white after:text-2xl"></div>
+    
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
   
   <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-30">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
     </svg>
   </div>
 </section>
 
+<!-- Stats Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors duration-300">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 mb-2">500+</div>
+        <div class="text-gray-600">Happy Clients</div>
+      </div>
+      
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors duration-300">
+          <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 mb-2">15+</div>
+        <div class="text-gray-600">Years Experience</div>
+      </div>
+      
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors duration-300">
+          <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 mb-2">$50M+</div>
+        <div class="text-gray-600">Claims Processed</div>
+      </div>
+      
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors duration-300">
+          <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 mb-2">24/7</div>
+        <div class="text-gray-600">Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Mission, Vision & Values -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-gray-50">
   <div class="max-w-7xl mx-auto px-4">
     <div class="text-center mb-16">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Mission, Vision & Values</h2>
@@ -48,7 +153,7 @@
     </div>
     
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="group p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+      <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
@@ -58,7 +163,7 @@
         <p class="text-gray-600 leading-relaxed">To safeguard our customers' futures by providing comprehensive and affordable insurance coverage, and build long-term relationships through trust, transparency and outstanding service.</p>
       </div>
       
-      <div class="group p-8 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl border border-indigo-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+      <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -69,7 +174,7 @@
         <p class="text-gray-600 leading-relaxed">To be a trusted leader offering customer-centric insurance solutions that empower individuals and businesses to achieve financial security.</p>
       </div>
       
-      <div class="group p-8 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl border border-purple-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+      <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -95,87 +200,11 @@
   </div>
 </section>
 
-<!-- Our Project & Goals -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div>
-        <h3 class="text-3xl font-bold text-gray-900 mb-6">Our Project</h3>
-        <p class="text-lg text-gray-600 leading-relaxed mb-8">
-          Waja Insurance Brokers provides personalized insurance solutions by partnering with multiple leading insurance providers to offer a wide range of coverage options across life, health, property and business policies.
-        </p>
-        <div class="space-y-4">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="font-semibold text-gray-900">Comprehensive Coverage</h4>
-              <p class="text-gray-600">Multiple insurance providers under one roof</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="font-semibold text-gray-900">Personalized Service</h4>
-              <p class="text-gray-600">Tailored solutions for your specific needs</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </div>
-            <div>
-              <h4 class="font-semibold text-gray-900">Quick Response</h4>
-              <p class="text-gray-600">Fast claims processing and support</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white p-8 rounded-2xl shadow-lg">
-        <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Goals</h3>
-        <div class="space-y-6">
-          <div class="flex items-start gap-4">
-            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
-            <div>
-              <h4 class="font-semibold text-gray-900">Customer Satisfaction</h4>
-              <p class="text-gray-600 text-sm mt-1">Ensuring every client receives exceptional service and optimal coverage</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
-            <div>
-              <h4 class="font-semibold text-gray-900">Financial Strength</h4>
-              <p class="text-gray-600 text-sm mt-1">Building robust financial partnerships for long-term stability</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
-            <div>
-              <h4 class="font-semibold text-gray-900">Community Impact</h4>
-              <p class="text-gray-600 text-sm mt-1">Contributing to community development and social responsibility</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Target Audiences -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4">
     <div class="text-center mb-16">
-      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Target Audiences</h3>
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h3>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">Specialized insurance solutions for key industries</p>
     </div>
     
@@ -189,13 +218,13 @@
             </svg>
           </div>
           <h4 class="text-xl font-bold text-gray-900 mb-4">Mining</h4>
-          <p class="text-gray-600 leading-relaxed">Companies in extraction of minerals and metals — safety, risk management, regulatory compliance.</p>
-          <div class="mt-6 flex items-center text-yellow-600 font-medium">
+          <p class="text-gray-600 leading-relaxed mb-6">Companies in extraction of minerals and metals — safety, risk management, regulatory compliance.</p>
+          <a href="#" class="inline-flex items-center text-yellow-600 font-medium hover:text-yellow-700 transition-colors duration-300">
             <span class="text-sm">Learn more</span>
             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       
@@ -208,13 +237,13 @@
             </svg>
           </div>
           <h4 class="text-xl font-bold text-gray-900 mb-4">Transport & Logistics</h4>
-          <p class="text-gray-600 leading-relaxed">Fleet & cargo insurance, route & safety management.</p>
-          <div class="mt-6 flex items-center text-green-600 font-medium">
+          <p class="text-gray-600 leading-relaxed mb-6">Fleet & cargo insurance, route & safety management.</p>
+          <a href="#" class="inline-flex items-center text-green-600 font-medium hover:text-green-700 transition-colors duration-300">
             <span class="text-sm">Learn more</span>
             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       
@@ -227,13 +256,13 @@
             </svg>
           </div>
           <h4 class="text-xl font-bold text-gray-900 mb-4">Manufacturing</h4>
-          <p class="text-gray-600 leading-relaxed">Coverage for production, equipment, supply chain risks.</p>
-          <div class="mt-6 flex items-center text-red-600 font-medium">
+          <p class="text-gray-600 leading-relaxed mb-6">Coverage for production, equipment, supply chain risks.</p>
+          <a href="#" class="inline-flex items-center text-red-600 font-medium hover:text-red-700 transition-colors duration-300">
             <span class="text-sm">Learn more</span>
             <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -281,5 +310,83 @@
   animation-delay: 0.6s;
   opacity: 0;
 }
+
+/* Swiper customizations */
+.heroSwiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.heroSwiper .swiper-pagination-bullet-active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.heroSwiper .swiper-button-next,
+.heroSwiper .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.heroSwiper .swiper-button-next:hover,
+.heroSwiper .swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.heroSwiper .swiper-button-next::after,
+.heroSwiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Hero Swiper
+  const heroSwiper = new Swiper('.heroSwiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    speed: 1000,
+    on: {
+      slideChange: function() {
+        // Reset animations on slide change
+        const activeSlide = this.slides[this.activeIndex];
+        const animatedElements = activeSlide.querySelectorAll('.animate-fade-in-up');
+        animatedElements.forEach((el, index) => {
+          el.style.animation = 'none';
+          setTimeout(() => {
+            el.style.animation = `fade-in-up 0.6s ease-out forwards`;
+            if (index > 0) {
+              el.style.animationDelay = `${index * 0.3}s`;
+            }
+          }, 100);
+        });
+      }
+    }
+  });
+});
+</script>
 @endsection
