@@ -36,7 +36,6 @@ RUN npm install && npm run build
 # Permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-CMD ["php-fpm"]
 
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]
 
