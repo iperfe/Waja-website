@@ -14,7 +14,6 @@
         <img src="{{ asset('logo.svg') }}" alt="Waja Logo" class="h-10 w-10 object-contain">
         <div>
           <div class="font-bold text-lg">Waja Genaral Company</div>
-          <div class="text-xs text-gray-500">Insurance Brokers</div>
         </div>
       </a>
 
