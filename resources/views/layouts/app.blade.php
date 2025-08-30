@@ -358,63 +358,75 @@
         </button>
       </div>
 
-      <!-- Mobile Navigation -->
-      <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform -translate-y-2" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-2" class="lg:hidden border-t bg-white">
-        <div class="px-4 py-6 space-y-4">
-          <a href="{{ route('home') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">Home</a>
-          <a href="{{ route('about') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">About Us</a>
-          
-          <!-- Mobile Mega Menu -->
-          <div x-data="{ open: false }">
-            <button @click="open = !open" class="w-full flex justify-between items-center py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">
-              Our Services
-              <svg class="w-4 h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div x-show="open" x-transition class="mt-2 pl-4 space-y-4">
-              <!-- Industrial Coverage -->
-              <div class="space-y-2">
-                <div class="font-medium text-gray-700 text-sm">Industrial Coverage</div>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Mining Insurance</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Chemical Products</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Steel & Metal</a>
-              </div>
-              
-              <!-- Transport & Logistics -->
-              <div class="space-y-2 border-t pt-4">
-                <div class="font-medium text-gray-700 text-sm">Transport & Logistics</div>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Fleet Insurance</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Cargo Insurance</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Logistics Coverage</a>
-              </div>
+       <!-- Mobile Navigation -->
+<div x-show="mobileMenuOpen"
+     x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0 transform -translate-y-2"
+     x-transition:enter-end="opacity-100 transform translate-y-0"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="opacity-100 transform translate-y-0"
+     x-transition:leave-end="opacity-0 transform -translate-y-2"
+     class="lg:hidden border-t bg-white">
+  
+  <div class="px-4 py-6 space-y-4">
+    <a href="{{ route('home') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">Home</a>
+    <a href="{{ route('about') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">About Us</a>
+    
+    <!-- Mobile Mega Menu -->
+    <div x-data="{ open: false }">
+      <button @click="open = !open" class="w-full flex justify-between items-center py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">
+        Our Services
+        <svg class="w-4 h-4 transform transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      
+      <div x-show="open" x-transition class="mt-2 pl-4 space-y-4">
+        <!-- Industrial Coverage -->
+        <div class="space-y-2">
+          <div class="font-medium text-gray-700 text-sm">Industrial Coverage</div>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Mining Insurance</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Chemical Products</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-yellow-50 transition-colors duration-300 text-gray-600 text-sm">Steel & Metal</a>
+        </div>
 
-              <!-- Manufacturing -->
-              <div class="space-y-2 border-t pt-4">
-                <div class="font-medium text-gray-700 text-sm">Manufacturing</div>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 text-gray-600 text-sm">Production Coverage</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 text-gray-600 text-sm">Equipment Insurance</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 text-gray-600 text-sm">Product Liability</a>
-              </div>
+        <!-- Transport & Logistics -->
+        <div class="space-y-2 border-t pt-4">
+          <div class="font-medium text-gray-700 text-sm">Transport & Logistics</div>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Fleet Insurance</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Cargo Insurance</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-green-50 transition-colors duration-300 text-gray-600 text-sm">Logistics Coverage</a>
+        </div>
 
-              <!-- Commercial & Property -->
-              <div class="space-y-2 border-t pt-4">
-                <div class="font-medium text-gray-700 text-sm">Commercial & Property</div>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors duration-300 text-gray-600 text-sm">Real Estate</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors duration-300 text-gray-600 text-sm">Hospitality</a>
-                <a href="#" class="block py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors duration-300 text-gray-600 text-sm">Business Liability</a>
-              </div>
-              
-              <!-- View All -->
-              <div class="border-t pt-4">
-                <a href="{{ route('products') }}" class="block py-2 px-4 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-300 text-sm font-medium">
-                  View All Services →
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <a href="{{ route('contact') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">Contact</a>
+        <!-- Manufacturing -->
+        <div class="space-y-2 border-t pt-4">
+          <div class="font-medium text-gray-700 text-sm">Manufacturing</div>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 text-gray-600 text-sm">Production Coverage</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 text-gray-600 text-sm">Equipment Insurance</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 text-gray-600 text-sm">Product Liability</a>
+        </div>
+
+        <!-- Commercial & Property -->
+        <div class="space-y-2 border-t pt-4">
+          <div class="font-medium text-gray-700 text-sm">Commercial & Property</div>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors duration-300 text-gray-600 text-sm">Real Estate</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors duration-300 text-gray-600 text-sm">Hospitality</a>
+          <a href="#" class="block py-2 px-4 rounded-lg hover:bg-purple-50 transition-colors duration-300 text-gray-600 text-sm">Business Liability</a>
+        </div>
+
+        <!-- View All Services -->
+        <div class="border-t pt-4">
+          <a href="{{ route('products') }}" class="block py-3 px-4 rounded-lg bg-blue-600 text-white text-center font-medium hover:bg-blue-700 transition-colors duration-300">
+            View All Services
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="{{ route('products') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">Products</a>
+    <a href="{{ route('contact') }}" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300 font-medium">Contact</a>
+  </div>
+</div>
           
           <div class="pt-4 border-t">
             <a href="{{ route('contact') }}" class="block w-full bg-blue-600 text-white text-center py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300">
@@ -573,4 +585,9 @@
                 </svg>
                 Mining Insurance
               </a></li>
-              <li><a href="#" class="text-gray-300 hover:text-white hover:translate-x
+              <li><a href="#" class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+               </svg>
+                #
+              </a></li>
