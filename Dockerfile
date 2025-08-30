@@ -1,29 +1,18 @@
-# Use official PHP Apache image
-FROM php:8.2-apache
+# Copy composer from official image
+COPY --from=composer:2.6 /usr/bin/composer /usr/bin/composer
 
-# Install dependencies (PostgreSQL, GD, etc.)
-RUN apt-get update && apt-get install -y \
-    libpq-dev \
-    unzip \
-    git \
-    && docker-php-ext-install pdo pdo_pgsql pgsql \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Enable Apache rewrite module
-RUN a2enmod rewrite
+# Copy Laravel files
+COPY . /var/www/html
 
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy project files
-COPY . /var/www/html
+# Install PHP dependencies
+RUN composer install --no-dev --optimize-autoloader
 
-# Set correct permissions
+# Set permissions
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
-# Expose port 80
-EXPOSE 80
-
-# Start Apache
-CMD ["apache2-foreground"]
+# Make Apache serve the public folder
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|' /etc/apache2/sites-available/000-default.conf
