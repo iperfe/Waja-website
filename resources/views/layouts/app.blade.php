@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ $title ?? 'WajaCompany' }}</title>
-  <meta name="description" content="Waja Insurance Brokers - trusted broker providing tailored, affordable insurance solutions.">
+  <meta name="description" content="Waja General Company">
   @vite(['resources/css/app.css','resources/js/app.js'])
   
   <!-- Swiper CSS -->
@@ -83,7 +83,6 @@
           </div>
           <div>
             <div class="font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors duration-300">Waja General Company</div>
-            <div class="text-sm text-gray-500">Insurance Brokers</div>
           </div>
         </a>
 
@@ -453,7 +452,6 @@
               </div>
               <div>
                 <div class="font-bold text-xl text-white group-hover:text-blue-400 transition-colors duration-300">Waja General Company</div>
-                <div class="text-sm text-gray-400">Insurance Brokers</div>
               </div>
             </div>
             <p class="text-gray-300 mb-6 max-w-md leading-relaxed">
