@@ -1,66 +1,131 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Waja General Company Website 🌟
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern, enterprise-grade website showcasing Waja General Company's diverse portfolio of services across Bio-Medical, Insurance, and Education sectors.
 
-## About Laravel
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Development](#development)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Maintenance](#maintenance)
+- [Support](#support)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ⭐ Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Core Functionality
+- **Multi-Division Support**
+  - Waja Bio-Medical Services
+  - Waja Insurance Services 
+  - Waja Schools & Education
+  
+- **Interactive UI Components**
+  - Dynamic mega menu navigation
+  - Responsive image galleries
+  - Animated statistics counters
+  - Interactive forms with validation
+  - Real-time newsletter subscription
+  - Floating action buttons
+  - Smooth scroll behaviors
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Performance Optimizations**
+  - Lazy loading images
+  - Code splitting
+  - Asset minification
+  - Cache management
+  - CDN integration
+  - Database query optimization
 
-## Learning Laravel
+- **SEO & Analytics**
+  - Meta tags optimization
+  - Schema markup
+  - Sitemap generation
+  - Google Analytics integration
+  - Social media meta tags
+  - Structured data implementation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Business Features
+- **Bio-Medical Division**
+  - Product catalogs
+  - Technical specifications
+  - Research publications
+  - Equipment documentation
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Insurance Services**
+  - Policy comparisons
+  - Premium calculators
+  - Claims management
+  - Client portals
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Education Division**
+  - Course catalogs
+  - Student portals
+  - Academic calendars
+  - Resource libraries
 
-## Laravel Sponsors
+## 🛠️ Tech Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Frontend
+- HTML5/CSS3
+- Tailwind CSS 3.x
+- Alpine.js 3.x
+- JavaScript ES6+
+- Swiper.js
+- GSAP (Animations)
 
-### Premium Partners
+### Backend
+- Laravel 10.x
+- PHP 8.1+
+- MySQL 8.0+
+- Redis (Caching)
+- Mailgun (Email)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### DevOps & Tools
+- Git
+- Docker
+- Vite
+- npm
+- Composer
+- GitHub Actions
+- Laravel Mix
 
-## Contributing
+## 📋 Requirements
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### System Requirements
+- PHP >= 8.1
+- MySQL >= 8.0
+- Node.js >= 16.x
+- Composer 2.x
+- npm >= 8.x
 
-## Code of Conduct
+### Server Requirements
+- Apache/Nginx
+- SSL Certificate
+- 2GB RAM minimum
+- 20GB storage minimum
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 💻 Installation
 
-## Security Vulnerabilities
+### Windows Setup
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```powershell
+# Install Required Tools
+choco install php composer nodejs mysql -y
 
-## License
+# Clone Repository
+git clone https://github.com/your-username/waja-general.git
+cd waja-general
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Install Dependencies
+composer install
+npm install
+
+# Configure Environment
+copy .env.example .env
+php artisan key:generate
+
+# Setup Database
+php artisan migrate --seed
