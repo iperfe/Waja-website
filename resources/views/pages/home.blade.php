@@ -27,7 +27,7 @@
             <div class="swiper-slide relative">
                 <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-blue-900/80 z-10"></div>
                 <div class="absolute inset-0 bg-cover bg-center scale-105 animate-ken-burns" 
-                     style="background-image: url('{{ asset('images/hero/hero-1.jpg') }}')"></div>
+                     style="background-image: url('{{ asset('assets/hero-waja-1.png') }}')"></div>
                 <div class="relative z-20 h-full flex items-center">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                         <div class="text-center">
@@ -60,7 +60,7 @@
             <div class="swiper-slide relative">
                 <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-blue-900/80 z-10"></div>
                 <div class="absolute inset-0 bg-cover bg-center scale-105 animate-ken-burns" 
-                     style="background-image: url('{{ asset('images/hero/hero-2.jpg') }}')"></div>
+                     style="background-image: url('{{ asset('assets/hero-waja-2.png') }}')"></div>
                 <div class="relative z-20 h-full flex items-center">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                         <div class="text-center">
@@ -92,7 +92,7 @@
             <div class="swiper-slide relative">
                 <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/70 to-blue-900/80 z-10"></div>
                 <div class="absolute inset-0 bg-cover bg-center scale-105 animate-ken-burns" 
-                     style="background-image: url('{{ asset('images/hero/hero-3.jpg') }}')"></div>
+                     style="background-image: url('{{ asset('assets/hero-waja-1.png') }}')"></div>
                 <div class="relative z-20 h-full flex items-center">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                         <div class="text-center">
