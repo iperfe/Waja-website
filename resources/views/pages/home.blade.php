@@ -5,7 +5,7 @@
   <!-- Swiper -->
   <div class="swiper heroSwiper h-full">
     <div class="swiper-wrapper">
-      <!-- Slide 1 - Insurance Protection -->
+      <!-- Slide 1 - Waja General Company -->
       <div class="swiper-slide relative">
         <div class="absolute inset-0 bg-black/50 z-10"></div>
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('assets/hero-waja-1.png') }}')"></div>
@@ -13,18 +13,18 @@
           <div class="max-w-5xl mx-auto px-4 text-center text-white">
             <div class="animate-fade-in-up">
               <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Safeguarding your future with 
-                <span class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">tailored insurance</span>
+                Your Trusted Partner in 
+                <span class="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Business Excellence</span>
               </h1>
               <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
-                We provide comprehensive and affordable insurance coverage, building long-term relationships based on trust and transparency.
+                Waja General Company - delivering comprehensive solutions across insurance, biochemical, and educational sectors with unmatched expertise and reliability.
               </p>
               <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('products') }}" class="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  Our Services
+                <a href="{{ route('about') }}" class="px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  Our Companies
                 </a>
                 <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                  Get Free Quote
+                  Get in Touch
                 </a>
               </div>
             </div>
@@ -32,7 +32,7 @@
         </div>
       </div>
       
-      <!-- Slide 2 - Mining Industry -->
+      <!-- Slide 2 - Insurance Excellence -->
       <div class="swiper-slide relative">
         <div class="absolute inset-0 bg-black/50 z-10"></div>
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('assets/hero-waja-2.png') }}')"></div>
@@ -40,18 +40,18 @@
           <div class="max-w-5xl mx-auto px-4 text-center text-white">
             <div class="animate-fade-in-up">
               <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Specialized Insurance for 
-                <span class="bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">Mining & Transport</span>
+                Leading in 
+                <span class="bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">Insurance & Protection</span>
               </h1>
               <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
-                Expert coverage for high-risk industries with customized solutions for mining operations and transport logistics.
+                Safeguarding businesses and individuals with comprehensive insurance solutions tailored to meet diverse industry needs across Tanzania and East Africa.
               </p>
               <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="{{ route('products') }}" class="px-8 py-4 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  View Industries
+                  Insurance Services
                 </a>
                 <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                  Contact Expert
+                  Get Quote
                 </a>
               </div>
             </div>
@@ -59,7 +59,7 @@
         </div>
       </div>
       
-      <!-- Slide 3 - Manufacturing -->
+      <!-- Slide 3 - Innovation & Growth -->
       <div class="swiper-slide relative">
         <div class="absolute inset-0 bg-black/50 z-10"></div>
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('assets/hero-waja-3.png') }}')"></div>
@@ -67,18 +67,18 @@
           <div class="max-w-5xl mx-auto px-4 text-center text-white">
             <div class="animate-fade-in-up">
               <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Comprehensive Coverage for 
-                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Manufacturing</span>
+                Innovation Across 
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Multiple Industries</span>
               </h1>
               <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 mb-8">
-                Protecting your production lines, equipment, and supply chain with specialized manufacturing insurance solutions.
+                From biochemical solutions to educational excellence, we drive innovation and growth across diverse sectors, creating sustainable value for our communities.
               </p>
               <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('products') }}" class="px-8 py-4 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  Manufacturing Coverage
+                <a href="{{ route('about') }}" class="px-8 py-4 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  Learn More
                 </a>
                 <a href="{{ route('contact') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transform hover:scale-105 transition-all duration-300">
-                  Get Assessment
+                  Partner With Us
                 </a>
               </div>
             </div>
@@ -108,8 +108,8 @@
 <section class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4">
     <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Trusted by Industry Leaders</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our numbers speak for themselves - delivering excellence across all sectors</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Trusted Across Industries</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our commitment to excellence spans multiple sectors, delivering exceptional results across all our business verticals</p>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
       <div class="text-center group">
@@ -118,31 +118,31 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
           </svg>
         </div>
-        <div class="text-4xl font-bold text-gray-900 mb-2 counter" data-target="500">0</div>
-        <div class="text-gray-600 font-medium">Happy Clients</div>
-        <div class="text-sm text-gray-500 mt-1">Across East Africa</div>
+        <div class="text-4xl font-bold text-gray-900 mb-2 counter" data-target="1000">0</div>
+        <div class="text-gray-600 font-medium">Satisfied Clients</div>
+        <div class="text-sm text-gray-500 mt-1">Across All Sectors</div>
       </div>
       
       <div class="text-center group">
         <div class="w-20 h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300 shadow-lg">
           <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
           </svg>
         </div>
-        <div class="text-4xl font-bold text-gray-900 mb-2 counter" data-target="15">0</div>
-        <div class="text-gray-600 font-medium">Years Experience</div>
-        <div class="text-sm text-gray-500 mt-1">Industry Leadership</div>
+        <div class="text-4xl font-bold text-gray-900 mb-2 counter" data-target="3">0</div>
+        <div class="text-gray-600 font-medium">Business Sectors</div>
+        <div class="text-sm text-gray-500 mt-1">Diverse Portfolio</div>
       </div>
       
       <div class="text-center group">
         <div class="w-20 h-20 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300 shadow-lg">
           <svg class="w-10 h-10 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
           </svg>
         </div>
-        <div class="text-4xl font-bold text-gray-900 mb-2">$50M+</div>
-        <div class="text-gray-600 font-medium">Claims Processed</div>
-        <div class="text-sm text-gray-500 mt-1">Successfully Settled</div>
+        <div class="text-4xl font-bold text-gray-900 mb-2 counter" data-target="20">0</div>
+        <div class="text-gray-600 font-medium">Years Excellence</div>
+        <div class="text-sm text-gray-500 mt-1">Proven Track Record</div>
       </div>
       
       <div class="text-center group">
@@ -152,8 +152,8 @@
           </svg>
         </div>
         <div class="text-4xl font-bold text-gray-900 mb-2">24/7</div>
-        <div class="text-gray-600 font-medium">Support Available</div>
-        <div class="text-sm text-gray-500 mt-1">Round the Clock</div>
+        <div class="text-gray-600 font-medium">Dedicated Support</div>
+        <div class="text-sm text-gray-500 mt-1">Always Available</div>
       </div>
     </div>
   </div>
@@ -167,7 +167,7 @@
         Our Foundation
       </div>
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mission, Vision & Values</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Building the foundation of trust and excellence in insurance services</p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Building the foundation of trust and excellence across all our business ventures</p>
     </div>
     
     <div class="grid md:grid-cols-3 gap-8">
@@ -178,7 +178,7 @@
           </svg>
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-4">Our Mission</h3>
-        <p class="text-gray-600 leading-relaxed">To safeguard our customers' futures by providing comprehensive and affordable insurance coverage, and build long-term relationships through trust, transparency and outstanding service.</p>
+        <p class="text-gray-600 leading-relaxed">To be a leading diversified company providing exceptional solutions across insurance, biochemical, and educational sectors while fostering sustainable growth and community development.</p>
       </div>
       
       <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100">
@@ -189,7 +189,7 @@
           </svg>
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-4">Our Vision</h3>
-        <p class="text-gray-600 leading-relaxed">To be a trusted leader offering customer-centric insurance solutions that empower individuals and businesses to achieve financial security.</p>
+        <p class="text-gray-600 leading-relaxed">To be the most trusted and innovative group of companies in East Africa, creating lasting value for stakeholders while contributing to societal advancement.</p>
       </div>
       
       <div class="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100">
@@ -202,15 +202,15 @@
         <ul class="space-y-3 text-gray-600">
           <li class="flex items-center gap-3">
             <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
-            <span class="font-medium">Integrity</span>
+            <span class="font-medium">Integrity & Transparency</span>
           </li>
           <li class="flex items-center gap-3">
             <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
-            <span class="font-medium">Excellence</span>
+            <span class="font-medium">Innovation & Excellence</span>
           </li>
           <li class="flex items-center gap-3">
             <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
-            <span class="font-medium">Trust</span>
+            <span class="font-medium">Community Impact</span>
           </li>
         </ul>
       </div>
@@ -218,29 +218,29 @@
   </div>
 </section>
 
-<!-- Target Audiences -->
+<!-- Business Sectors -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4">
     <div class="text-center mb-16">
       <div class="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
-        Industry Expertise
+        Our Portfolio
       </div>
-      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industries We Serve</h3>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Specialized insurance solutions for key industries across Tanzania and East Africa</p>
+      <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Business Sectors We Serve</h3>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Diversified solutions across multiple industries, delivering excellence and innovation in every sector we operate</p>
     </div>
     
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="group relative overflow-hidden bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border border-yellow-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-400/20 to-orange-400/20 rounded-full -translate-y-16 translate-x-16"></div>
+      <div class="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-full -translate-y-16 translate-x-16"></div>
         <div class="relative p-8">
-          <div class="w-16 h-16 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
             </svg>
           </div>
-          <h4 class="text-xl font-bold text-gray-900 mb-4">Mining</h4>
-          <p class="text-gray-600 leading-relaxed mb-6">Companies in extraction of minerals and metals — safety, risk management, regulatory compliance.</p>
-          <a href="#" class="inline-flex items-center text-yellow-600 font-medium hover:text-yellow-700 transition-colors duration-300 group/link">
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Insurance Services</h4>
+          <p class="text-gray-600 leading-relaxed mb-6">Comprehensive insurance solutions for businesses and individuals across multiple industries including mining, transport, manufacturing, and commercial sectors.</p>
+          <a href="{{ route('products') }}" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors duration-300 group/link">
             <span class="text-sm">Learn more</span>
             <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -254,11 +254,11 @@
         <div class="relative p-8">
           <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
             </svg>
           </div>
-          <h4 class="text-xl font-bold text-gray-900 mb-4">Transport & Logistics</h4>
-          <p class="text-gray-600 leading-relaxed mb-6">Fleet & cargo insurance, route & safety management.</p>
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Biochemical Solutions</h4>
+          <p class="text-gray-600 leading-relaxed mb-6">Advanced biochemical products and solutions for agricultural, industrial, and research applications, driving innovation in chemical sciences.</p>
           <a href="#" class="inline-flex items-center text-green-600 font-medium hover:text-green-700 transition-colors duration-300 group/link">
             <span class="text-sm">Learn more</span>
             <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -268,17 +268,17 @@
         </div>
       </div>
       
-      <div class="group relative overflow-hidden bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl border border-red-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-400/20 to-pink-400/20 rounded-full -translate-y-16 translate-x-16"></div>
+      <div class="group relative overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl border border-purple-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full -translate-y-16 translate-x-16"></div>
         <div class="relative p-8">
-          <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
             </svg>
           </div>
-          <h4 class="text-xl font-bold text-gray-900 mb-4">Manufacturing</h4>
-          <p class="text-gray-600 leading-relaxed mb-6">Coverage for production, equipment, supply chain risks.</p>
-          <a href="#" class="inline-flex items-center text-red-600 font-medium hover:text-red-700 transition-colors duration-300 group/link">
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Educational Excellence</h4>
+          <p class="text-gray-600 leading-relaxed mb-6">Quality education services and institutions dedicated to nurturing future leaders and contributing to educational development in our communities.</p>
+          <a href="#" class="inline-flex items-center text-purple-600 font-medium hover:text-purple-700 transition-colors duration-300 group/link">
             <span class="text-sm">Learn more</span>
             <svg class="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -298,7 +298,7 @@
         Client Testimonials
       </div>
       <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h3>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Real feedback from businesses who trust us with their insurance needs</p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Real feedback from businesses and individuals who trust us across all our service sectors</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
@@ -320,9 +320,9 @@
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
           </svg>
         </div>
-        <p class="text-gray-600 leading-relaxed mb-6">"Waja Insurance provided excellent coverage for our mining operations. Their team understood our unique risks and delivered comprehensive protection."</p>
+        <p class="text-gray-600 leading-relaxed mb-6">"Waja General Company has been our trusted partner across multiple business needs. Their insurance solutions protected our mining operations while their professional approach impressed us."</p>
         <div class="flex items-center gap-3">
-          <div class="w-12 h-12 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-full flex items-center justify-center text-white font-bold">
+          <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
             JM
           </div>
           <div>
@@ -350,14 +350,14 @@
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
           </svg>
         </div>
-        <p class="text-gray-600 leading-relaxed mb-6">"Outstanding service and competitive rates. Our fleet insurance is comprehensive and the claims process is incredibly smooth."</p>
+        <p class="text-gray-600 leading-relaxed mb-6">"Outstanding service across all their business divisions. From biochemical solutions to educational support, they've consistently delivered excellence and innovation."</p>
         <div class="flex items-center gap-3">
           <div class="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
             AS
           </div>
           <div>
             <div class="font-semibold text-gray-900">Anna Simba</div>
-            <div class="text-sm text-gray-500">Operations Manager, Swift Logistics</div>
+            <div class="text-sm text-gray-500">Director, AgroTech Solutions</div>
           </div>
         </div>
       </div>
@@ -380,14 +380,14 @@
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
           </svg>
         </div>
-        <p class="text-gray-600 leading-relaxed mb-6">"Professional team with deep industry knowledge. They've helped us secure comprehensive coverage for our manufacturing facility."</p>
+        <p class="text-gray-600 leading-relaxed mb-6">"A reliable partner with diverse expertise. Their comprehensive approach and commitment to quality has made them our go-to company for multiple business solutions."</p>
         <div class="flex items-center gap-3">
-          <div class="w-12 h-12 bg-gradient-to-br from-red-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
+          <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
             RK
           </div>
           <div>
             <div class="font-semibold text-gray-900">Robert Kamau</div>
-            <div class="text-sm text-gray-500">Plant Manager, TechPro Manufacturing</div>
+            <div class="text-sm text-gray-500">Principal, Kamau Educational Institute</div>
           </div>
         </div>
       </div>
@@ -405,13 +405,13 @@
   
   <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
     <h3 class="text-3xl md:text-4xl font-bold mb-4">Ready to Protect Your Future?</h3>
-    <p class="text-xl text-blue-100 mb-8 leading-relaxed">Get personalized insurance solutions tailored to your specific industry needs. Join 500+ satisfied clients who trust us with their protection.</p>
+    <p class="text-xl text-blue-100 mb-8 leading-relaxed">Partner with Waja General Company for comprehensive solutions across insurance, biochemical, and educational sectors. Join 1000+ satisfied clients who trust us with their success.</p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="{{ route('contact') }}" class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-        Get Free Quote
+        Get Started Today
       </a>
-      <a href="{{ route('products') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
-        View Our Services
+      <a href="{{ route('about') }}" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
+        Learn About Us
       </a>
     </div>
   </div>
@@ -549,18 +549,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Counter animation
   const counters = document.querySelectorAll('.counter');
+  let counterAnimated = false;
+  
   const animateCounters = () => {
+    if (counterAnimated) return;
+    counterAnimated = true;
+    
     counters.forEach(counter => {
       const target = parseInt(counter.getAttribute('data-target'));
-      const count = parseInt(counter.innerText);
-      const increment = target / 100;
+      let count = 0;
+      const increment = target / 50;
       
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(animateCounters, 30);
-      } else {
-        counter.innerText = target;
-      }
+      const updateCounter = () => {
+        if (count < target) {
+          count += increment;
+          counter.innerText = Math.ceil(count);
+          setTimeout(updateCounter, 40);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      
+      updateCounter();
     });
   };
 
@@ -568,9 +578,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const statsSection = document.querySelector('.py-16');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && !counterAnimated) {
         animateCounters();
-        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.5 });
